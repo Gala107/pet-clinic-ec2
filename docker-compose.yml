@@ -12,12 +12,14 @@ services:
     volumes:
       - db:/var/lib/mysql
   angular-container:
+    build: ./PetClinicAngularRouting/
     container_name: pet_clinic_angular
     image: pet_clinic_angular:1.0
     ports:
       - 80:80
     restart: always  
   springboot-container:
+    build: ./PetClinicSpringBootRESTfulService/
     container_name: pet_clinic_sboot 
     image: pet_clinic_sboot:1.0
     depends_on:
