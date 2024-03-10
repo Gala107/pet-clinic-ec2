@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class OwnerService {
-  baseUrl = "http://localhost:8282/petclinic/";
+  baseUrl = "http://18.117.161.3:8282/petclinic/";
 
   constructor(private http: HttpClient) {}
 
