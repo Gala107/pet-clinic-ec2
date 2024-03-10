@@ -14,14 +14,14 @@ services:
   angular-container:
   	build: ./PetClinicAngularRouting/
     container_name: pet_clinic_angular
-    image: gala107/pet_clinic_angular:1.0
+    image: pet_clinic_angular:1.0
     ports:
       - 80:80
     restart: always  
   springboot-container:
   	build: ./PetClinicSpringBootRESTfulService/
     container_name: pet_clinic_sboot 
-    image: gala107/pet_clinic_sboot:1.0
+    image: pet_clinic_sboot:1.0
     depends_on:
       - mysql-container
     ports:
