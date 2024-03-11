@@ -48,7 +48,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>petClinicSpringBoot</finalName>
+		<finalName>pet_clinic_sboot</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
